@@ -14,7 +14,7 @@ var swiper = new Swiper('.swiper-container', {
 var swiper2 = new Swiper('.swiper-clientes', {
     slidesPerView: 2,
     spaceBetween: 10,
-    loop: true,
+    // loop: true,
     pagination: {
       el: '.pagination-clientes',
       clickable: true,
