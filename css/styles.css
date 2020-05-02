@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title {
+    font-size: 1.8em;
+}
+
+#cards {
+    width: 100%;
+}
+
+#cards .box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#cards .box-container .card-wrapper{
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    border: 4px solid white;
+}
+#cards .box-container .card-wrapper .card-content-wrapper{
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    padding: 5%;
+    width: 100%;
+}
+#cards .box-container .card-wrapper .card-content-wrapper .title{
+    margin-bottom: 7%;
+    font-size: 1.5em;
+    text-align: center;
+}
+#cards .box-container .card-wrapper .card-content-wrapper p{
+    font-size: 1em;
+    color: #ccc;
+}
+
+#cards .box-container .rh {
+    background-image: url('../assets/cards/rh.jpg');
+    background-size: cover;
+}
+
+#cards .box-container .contable {
+    background-image: url('../assets/cards/financiero.jpg');
+    background-size: cover;
+}
+
+#cards .box-container .capital {
+    background-image: url('../assets/cards/capital.jpg');
+    background-size: cover;
+}
+
+#cards .box-container .innovacion {
+    background-image: url('../assets/cards/innovacion.jpg');
+    background-size: cover;
+}
+
+#cards .box-container .legal {
+    background-image: url('../assets/cards/legal.jpg');
+    background-size: cover;
+}
+
+@media screen and (max-width: 750px) {
+    #cards .box-container .card-wrapper .card-content-wrapper .title{
+        font-size: 1.2em;
+    }
+    #cards .box-container .card-wrapper .card-content-wrapper p{
+        font-size: .9em;
+    }
+}
+@media screen and (max-width: 680px) {
+    #cards .box-container .card-wrapper{
+        width: 100%;
+    }
+}
+
+
+#estudios {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    position: relative;
+}
+
+#estudios .content-wrapper {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+#estudios .content-wrapper > .title{
+    font-weight: 600;
+    font-size: 1.7em;
+    color: white;
+    text-align: center;
+    margin-bottom: 5%;
+}
+#estudios .content-wrapper > .text-content {
+    font-weight: 400;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+}
+
+#estudios .content-wrapper .product-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#estudios .content-wrapper .product-wrapper .product-w {
+    width: 46% !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-top: 5%;
+}
+#estudios .content-wrapper .product-wrapper .product-w .icon {
+    text-align: start;
+    width: 20%;
+    position: relative;
+}
+#estudios .content-wrapper .product-wrapper .product-w .icon .img-certificado, 
+#estudios .content-wrapper .product-wrapper .product-w .icon .img-formatos {
+    width: 40px;
+}
+#estudios .content-wrapper .product-wrapper .product-w .icon .img-metodos {
+    width: 48px;
+}
+#estudios .content-wrapper .product-wrapper .product-w .icon img {
+    width: 60px;
+}
+#estudios .content-wrapper .product-wrapper .product-w .text-box {
+    width: 75%;
+}
+#estudios .content-wrapper .product-wrapper .product-w .text-box .title {
+    font-weight: 600;
+}
+#estudios .content-wrapper .product-wrapper .product-w .text-box .content-text-box {
+    font-weight: 400;
+    color: #ddd;
+    text-align: justify;
+    font-size: .85em;
+}
+
+#estudios .img-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 850px) {
+    #estudios .content-wrapper > .text-content {
+        font-weight: 300;
+        font-size: 1em;
+    }
+    #estudios .content-wrapper .product-wrapper .product-w .icon {
+        margin-right: 5px;
+    }
+}
+@media screen and (max-width: 763px) {
+    #estudios .content-wrapper > .text-content {
+        font-size: .8em;
+    }
+    #estudios .content-wrapper .product-wrapper .product-w {
+        width: 100% !important;
+    }
+}
+
+
+
+#clientes {
+    width: 100%;
+    margin: 5% 0;
+}
+
+#clientes .titulo {
+    margin-bottom: 7%;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+#clientes .titulo h4{
+    font-weight: 700;
+    color: rgb(235, 103, 29);
+}
+
+.swiper-container {
+    width: 100%;
+}
+#clientes .swiper-clientes .swiper-wrapper .swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+} 
+#clientes .swiper-clientes .swiper-wrapper .swiper-slide img {
+    width: 180px !important;
+} 
+
+/* Contacto */
+#contacto {
+    width: 100%;
+    position: relative;
+}
+
+#contacto .img-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#contacto .box-wrapper {
+    width: 100%;
+    padding: 5%;
+    background: transparent;
+}
+#contacto .box-wrapper .title {
+   text-align: center;
+}
+#contacto .box-wrapper .content-wrapper {
+   width: 100%;
+   display: flex;
+}
+#contacto .box-wrapper .content-wrapper .left {
+    border: 1px solid black;
+   width: 50%;
+}
+#contacto .box-wrapper .content-wrapper .left .title-left {
+    margin-bottom: 5%;
+    color: white;
+}
+#contacto .box-wrapper .content-wrapper .left .rss-wrapper {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 5%;
+   color: white;
+   font-weight: 600;
+}
+#contacto .box-wrapper .content-wrapper .left .rss-wrapper .icon {
+   width: 20%;
+}
+#contacto .box-wrapper .content-wrapper .left .rss-wrapper .icon img {
+   width: 40px;
+}
+#contacto .box-wrapper .content-wrapper .left .rss-wrapper .number {
+   width: 80%;
+}
+
