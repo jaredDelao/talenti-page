@@ -175,3 +175,12 @@
         height: 40vh;
     }
 }
+
+@media screen and (max-width: 390px) {
+    nav img {
+        width: 90px;
+    }
+    nav .home {
+        margin-right: 10px;
+    }
+}
