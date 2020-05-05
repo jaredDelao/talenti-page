@@ -28,10 +28,6 @@ var swiper2 = new Swiper('.swiper-clientes', {
     slidesPerView: 2,
     spaceBetween: 10,
     loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
     pagination: {
       el: '.pagination-clientes',
       clickable: true,
@@ -77,8 +73,7 @@ $(".routers .contacto").click(function() {
 });
 
 // Sidebar
-var open = false;
-
+var btnMenu = document.getElementsByClassName("openbtn");
 function fromSidebar(e) {
   closeNav();
   $('html, body').animate({
@@ -87,11 +82,12 @@ function fromSidebar(e) {
 }
 
 function openNav() {
-  open = true;
   document.getElementById("mySidebar").style.width = "250px";
+  btnMenu[0].style.opacity = 0;
+  
 }
 
 function closeNav() {
-  open = false;
   document.getElementById("mySidebar").style.width = "0";
+  btnMenu[0].style.opacity = 1;
 }
