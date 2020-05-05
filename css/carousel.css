@@ -117,6 +117,11 @@
     .swiper-wrapper .text-content {
         font-size: .5em;
     }
+    .swiper-wrapper .text-content button {
+        font-size: 1em;
+        background: rgb(235, 103, 29);
+        color: white;
+    }
     #title, .title {
         font-size: 1.2em;
     }

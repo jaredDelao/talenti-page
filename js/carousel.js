@@ -82,7 +82,7 @@ var open = false;
 function fromSidebar(e) {
   closeNav();
   $('html, body').animate({
-    scrollTop: $(e).offset().top
+    scrollTop: $(e).offset().top - 50
   }, 500);
 }
 
