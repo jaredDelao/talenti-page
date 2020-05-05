@@ -12,10 +12,35 @@
     <link rel="stylesheet" href="./css/carousel.css">
 </head>
 <body>
+    <!-- sidebar -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a onclick="fromSidebar('.cards-servicios')" href="#">Servicios</a>
+        <a onclick="fromSidebar('#estudios')" href="#">Estudios Socioeconómicos</a>
+        <a onclick="fromSidebar('#clientes')" href="#">Clientes</a>
+        <a onclick="fromSidebar('#contacto')" href="#">Contacto</a>
+        <a href="sistema_digital.html">Acceder al sistema</a>
+    </div>
+
+    <nav class="toolbar toolbar-home">
+        <div class="logo">
+            <img src="./assets/logo-talenti.png" alt="talenti">
+        </div>
+
+        <!-- button sidebar 1000px -->
+        <button class="openbtn" onclick="openNav()">☰ Menu</button> 
+        <div class="routers">
+            <a class="servicios" href="#">Servicios</a>
+            <a class="estudios" href="#">Estudios Socioeconómicos</a>
+            <a class="clientes" href="#">Clientes</a>
+            <a class="contacto" href="#">Contacto</a>
+            <a class="acceder" href="sistema_digital.html">Acceder al sistema</a>
+        </div>
+    </nav>
 
     <!-- slider -->
     <section id="slider">
-        <div class="swiper-container">
+        <div class="swiper-container swiper-inicio">
             <div class="swiper-wrapper">
                 <div class="swiper-slide slide-1">
                     <div class="text-content">
@@ -53,7 +78,7 @@
 
 
     <!-- cards -->
-    <section id="cards">
+    <section id="cards" class="cards-servicios">
         <div class="box-container">
             <!-- Recursos humano -->
             <div class="card-wrapper rh">
@@ -119,7 +144,7 @@
 
         <div class="content-wrapper">
 
-            <h4 id="title" class="title">ESTUDIOS SOCIOECONÓMICOS</h4>
+            <span id="title" class="title">ESTUDIOS SOCIOECONÓMICOS</span>
             <div class="text-content">Realizamos estudios socioeconómicos con metodologías y procesos confiables que garantizan la  entrega de resultados con alta eficiencia en tiempos e información precisa. Nos respaldan más de 25 años de experticia.
             </div>
 
@@ -238,6 +263,9 @@
                     <img src="./assets/logos-clientes/Logo-Universidad CNCI.png" alt="">
                 </div>
             </div>
+             <!-- Add Arrows -->
+             <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div>
             <!-- Add Pagination -->
             <div class="swiper-pagination pagination-clientes"></div>
         </div>

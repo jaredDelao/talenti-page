@@ -1,0 +1,177 @@
+/* font size title */
+.title{
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: 600;
+ }
+ /***************/
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#sistema {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    position: relative;
+}
+
+#sistema .title {
+    margin-bottom: 5%;
+}
+#sistema .background {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+    object-position: left;
+    z-index: 0;
+}
+#sistema .wrapper-container {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    color: white;
+}
+
+
+#sistema .wrapper-container .wrapper-row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#sistema .wrapper-container .wrapper-row .left, 
+#sistema .wrapper-container .wrapper-row .right {
+    width: 50%;
+    padding: 3%;
+}
+#sistema .wrapper-container .wrapper-row .right {
+    text-align: justify;
+}
+
+#sistema .wrapper-container .wrapper-row .left .box-left {
+    display: flex;
+    flex-direction: row;
+    /* height: 100%; */
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+#sistema .wrapper-container .wrapper-row .left .box-left .image {
+    text-align: start;
+    width: 25%;
+    position: relative;
+}
+#sistema .wrapper-container .wrapper-row .left .box-left .image img {
+    width: 60px;
+}
+#sistema .wrapper-container .wrapper-row .left .box-left .text {
+    width: 75%;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/* right */
+#sistema .wrapper-container .wrapper-row .right span {
+    font-size: 1.6em;
+    text-align: justify;
+}
+
+
+/* SLIDER */
+#slider_sistema_digital {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+#slider_sistema_digital .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+    object-position: left;
+    z-index: 0;
+}
+#slider_sistema_digital .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination-bullet-active {
+    background-color: rgb(235, 103, 29) !important;
+ }
+ .swiper-button-next {
+    color: rgb(235, 103, 29) !important;
+ }
+ .swiper-button-prev {
+    color: rgb(235, 103, 29) !important;
+ }
+
+
+@media screen and (max-width: 900px) {
+    #sistema .wrapper-container .wrapper-row .right span {
+        font-size: 1.4em;
+    }
+    #sistema .wrapper-container .wrapper-row .left .box-left .text {
+        /* font-weight: 500; */
+        font-size: 1.0em;
+    }
+    .title {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 860px) {
+    #slider_sistema_digital {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 693px) {
+
+    #sistema .wrapper-container .wrapper-row {
+        flex-direction: column-reverse;
+    }
+
+    #sistema .wrapper-container .wrapper-row .left, 
+    #sistema .wrapper-container .wrapper-row .right {
+        width: 100%;
+    }
+
+    #sistema .wrapper-container .wrapper-row .left .box-left .image {
+        width: 20%;
+    }
+  
+    #sistema .wrapper-container .wrapper-row .right span {
+        font-size: 1em;
+    }
+    #sistema .wrapper-container .wrapper-row .left .box-left .text {
+        font-size: 1em;
+    }
+    #sistema .wrapper-container .wrapper-row .left .box-left .image img {
+        width: 45px;
+    }
+    #sistema .wrapper-container .wrapper-row .left .box-left .text {
+        font-size: 1.2em;
+    }
+    .title {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #slider_sistema_digital {
+        height: 40vh;
+    }
+}

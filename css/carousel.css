@@ -37,6 +37,10 @@
     align-items: center;
 }
 
+.swiper-wrapper .text-content {
+    z-index: 9;
+}
+
 .swiper-wrapper .slide-3 .text-content {
     position: absolute;
     top: 50%;
@@ -87,11 +91,19 @@
 #slider .swiper-slide img {
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
 }
 
 @media screen and (max-width: 860px) {
     .swiper-wrapper .text-content {
         font-size: .7em;
+    }
+    #title, .title {
+        font-size: 1.3em;
     }
 }
 @media screen and (max-width: 650px) {
@@ -101,5 +113,19 @@
     }
     .swiper-wrapper .slide-1 .text-content {
         width: 80%;
+    }
+    .swiper-wrapper .text-content {
+        font-size: .5em;
+    }
+    #title, .title {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .swiper-wrapper .text-content {
+        font-size: .4em;
+    }
+    #title, .title, #estudios #title {
+        font-size: 1.1em;
     }
 }
