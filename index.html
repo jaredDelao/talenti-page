@@ -8,8 +8,20 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/carousel.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="./css/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="./vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="./vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/util.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
     <!-- sidebar -->
@@ -264,8 +276,8 @@
                 </div>
             </div>
              <!-- Add Arrows -->
-             <div class="swiper-button-next"></div>
-             <div class="swiper-button-prev"></div>
+             <!-- <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div> -->
             <!-- Add Pagination -->
             <div class="swiper-pagination pagination-clientes"></div>
         </div>
@@ -312,9 +324,62 @@
     </section> -->
 
     
+  
+
+	<div class="container-contact100">
+		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Contáctanos
+				</span>
+
+				<div class="wrap-input100 validate-input" data-validate="Agrega tu nombre">
+					<input class="input100" type="text" name="name" placeholder="Nombre">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Agrega tu correo electrónico">
+					<input class="input100" type="text" name="email" placeholder="Correo">
+					<span class="focus-input100"></span>
+                </div>
+                
+				<div class="wrap-input100 validate-input" data-validate="Agrega tu teléfono">
+					<input class="input100" type="text" name="phone" placeholder="Teléfono">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Agrega un mensaje">
+					<textarea class="input100" name="message" placeholder="Mensaje"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						Enviar
+					</button>
+				</div>
+			</form>
+
+			<div class="contact100-more">
+				Contáctanos directamente al <span class="contact100-more-highlight"> +001 345 6889</span>
+			</div>
+		</div>
+	</div>
+
+    
 
     <script src="./js/jquery.min.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script> -->
+    <script src="./vendor/bootstrap/js/popper.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./vendor/animsition/js/animsition.min.js"></script>
+    <script src="./vendor/select2/select2.min.js"></script>
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/carousel.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 </html>

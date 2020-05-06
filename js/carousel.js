@@ -8,7 +8,11 @@ var swiper = new Swiper('.swiper-inicio', {
         el: '.swiper-pagination',
         dynamicBullets: true,
         clickable: true
-    }
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
 });
 
 var swiper = new Swiper('.swiper-sistema', {
@@ -21,13 +25,21 @@ var swiper = new Swiper('.swiper-sistema', {
         el: '.swiper-pagination',
         dynamicBullets: true,
         clickable: true
-    }
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
 });
 
 var swiper2 = new Swiper('.swiper-clientes', {
     slidesPerView: 2,
     spaceBetween: 10,
     loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: '.pagination-clientes',
       clickable: true,
