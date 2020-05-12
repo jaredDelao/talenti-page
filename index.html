@@ -27,10 +27,10 @@
     <!-- sidebar -->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a onclick="fromSidebar('.cards-servicios')" href="#">Servicios</a>
-        <a onclick="fromSidebar('#estudios')" href="#">Estudios Socioeconómicos</a>
-        <a onclick="fromSidebar('#clientes')" href="#">Clientes</a>
-        <a onclick="fromSidebar('#contacto')" href="#">Contacto</a>
+        <a onclick="fromSidebar('.cards-servicios', 70)" href="#">Servicios</a>
+        <a onclick="fromSidebar('#estudios', 70)" href="#">Estudios Socioeconómicos</a>
+        <a onclick="fromSidebar('#clientes', 90)" href="#">Clientes</a>
+        <a onclick="fromSidebar('#contacto', 120)" href="#">Contacto</a>
         <a href="sistema_digital.html">Acceder al sistema</a>
     </div>
 
@@ -60,7 +60,7 @@
                         <p class="text-orange">ESTUDIOS SOCIOECONÓMICOS</p>
                         <p><button onclick="window.location.href='./sistema_digital.html'">Conoce más</button></p>
                     </div>
-                    <img src="./assets/slider/home1.jpg">
+                    <img src="./assets/fondo-home.jpg">
                 </div>
                 <div class="swiper-slide slide-2">
                     <div class="text-content">
@@ -68,7 +68,7 @@
                         <p class="text-white">SOLUCIONES DE</p>
                         <p class="text-orange">CAPITAL HUMANO</p>
                     </div>
-                    <img src="./assets/slider/home2.jpg">
+                    <img src="./assets/fondo-home2.jpg">
                 </div>
                 <div class="swiper-slide slide-3">
                     <div class="text-content">
@@ -77,7 +77,7 @@
                         <p class="text-white">...ENCONTRANDO</p>
                         <p class="text-orange">GENTE CON VALOR</p>
                     </div>
-                    <img src="./assets/slider/home3.jpg">
+                    <img src="./assets/slider/home1.jpg">
                 </div>
             </div>
             <!-- Add Arrows -->
@@ -103,17 +103,20 @@
                     <p>Head Hunting</p>
                 </div>
             </div>
-            <!-- Contable financiero -->
-            <div class="card-wrapper contable">
+
+             <!-- Legal -->
+             <div class="card-wrapper legal">
                 <div class="card-content-wrapper">
-                    <h3 id="title" class="title">CONTABLE FINANCIERO</h3>
-                    <p>Asesoría y Asistencia Técnica</p>
-                    <p>Planes de Negocio</p>
-                    <p>Presupuestos</p>
-                    <p>Control Interno</p>
-                    <p>Auditoría Financiera y Especiales</p>
+                    <h3 id="title" class="title">LEGAL</h3>
+                    <p>Constitución de Sociedades</p>
+                    <p>Contratos</p>
+                    <p>Gestión de Propiedad Intelectual</p>
+                    <p>Gobierno Corporativo</p>
+                    <p>Protección de Datos Personales</p>
+                    <p>Despacho de Mercancias (Aduana)</p>
                 </div>
             </div>
+
             <!-- Capital -->
             <div class="card-wrapper capital">
                 <div class="card-content-wrapper">
@@ -135,18 +138,42 @@
                     <p>Unknown</p>
                 </div>
             </div>
-            <!-- Legal -->
-            <div class="card-wrapper legal">
+
+            <!-- Innovacion y capital-->
+            <div class="card-wrapper c-i">
                 <div class="card-content-wrapper">
-                    <h3 id="title" class="title">LEGAL</h3>
-                    <p>Constitución de Sociedades</p>
-                    <p>Contratos</p>
-                    <p>Gestión de Propiedad Intelectual</p>
-                    <p>Gobierno Corporativo</p>
-                    <p>Protección de Datos Personales</p>
-                    <p>Despacho de Mercancias (Aduana)</p>
+                    <h3 id="title" class="title">CAPITAL E INNOVACIÓN</h3>
+                    <div class="main-box">
+                        <div class="left-box">
+                            <p>Vinculación al Ecosistema</p>
+                            <p>Programas de Innovación</p>
+                            <p>Softlanding</p>
+                            <p>Hackatones</p>
+                            <p>Unknown</p>
+                        </div>
+    
+                        <div class="right-box">
+                            <p>Teaser - Pitchdeck</p>
+                            <p>Due diligence Legal</p>
+                            <p>Due diligence Financiero</p>
+                            <p>Fondos de Inversión</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Contable financiero -->
+            <div class="card-wrapper contable">
+                <div class="card-content-wrapper">
+                    <h3 id="title" class="title">CONTABLE FINANCIERO</h3>
+                    <p>Asesoría y Asistencia Técnica</p>
+                    <p>Planes de Negocio</p>
+                    <p>Presupuestos</p>
+                    <p>Control Interno</p>
+                    <p>Auditoría Financiera y Especiales</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -199,7 +226,7 @@
                         <img src="./assets/iconos/viaticos.png" alt="sin cobro de viaticos">
                     </div>
                         <div class="text-box">
-                            <p class="title">Cobertura Nacional</p>
+                            <p class="title">Sin Cobro de Viáticos</p>
                             <p class="content-text-box">Manejamos precios competitivos, sin gastos ni viáticos ocultos.</p>
                         </div>
                    
@@ -239,40 +266,37 @@
         <div class="swiper-container swiper-clientes">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="./assets/logos-clientes/Logo -  Edgewell.png" alt="Edgewell">
+                    <img src="./assets/logos-clientes/Logo - GNP.jpeg">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./assets/logos-clientes/Logo - El Universal.jpg" alt="">
+                    <img src="./assets/logos-clientes/nuevos/Grupo-Presidente.jpg">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./assets/logos-clientes/Logo - GNP.jpeg" alt="">
+                    <img src="./assets/logos-clientes/Logo - Hidrosina.png">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./assets/logos-clientes/Logo - Grupo Perc.png" alt="">
+                    <img src="./assets/logos-clientes/Logo - Truper.png">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./assets/logos-clientes/Logo - Grupo Presidente.jpg" alt="">
+                    <img src="./assets/logos-clientes/nuevos/peñaranda.png">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./assets/logos-clientes/Logo - Hidrosina.png" alt="">
+                    <img src="./assets/logos-clientes/nuevos/laboratio.png">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./assets/logos-clientes/Logo - Luber .png" alt="">
+                    <img src="./assets/logos-clientes/nuevos/lacoste.jpg">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./assets/logos-clientes/Logo - Medical Center.png" alt="">
+                    <img src="./assets/logos-clientes/nuevos/Prosa.png">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./assets/logos-clientes/Logo - Moyo.png" alt="">
+                    <img src="./assets/logos-clientes/Logo-Universidad CNCI.png">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./assets/logos-clientes/Logo - Peñaranda.png" alt="">
+                    <img src="./assets/logos-clientes/nuevos/Amexcap.png">
                 </div>
                 <div class="swiper-slide">
-                    <img src="./assets/logos-clientes/Logo - Truper.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="./assets/logos-clientes/Logo-Universidad CNCI.png" alt="">
+                    <img src="./assets/logos-clientes/nuevos/ig.jpg">
                 </div>
             </div>
              <!-- Add Arrows -->
@@ -326,10 +350,10 @@
     
   
 
-	<div class="container-contact100">
+	<div class="container-contact100" >
 		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
-		<div class="wrap-contact100">
+		<div class="wrap-contact100" id="contacto">
 			<form class="contact100-form validate-form">
 				<span class="contact100-form-title">
 					Contáctanos
@@ -360,13 +384,37 @@
 						Enviar
 					</button>
 				</div>
-			</form>
+            </form>
+            
+            <div class="contact-icons">
+                <div class="box telefono">
+                    <a href="tel:(55) 7599 0063">
+                        <img src="./assets/iconos/telefono-contact.png" alt="telefono">
+                    </a>
+                </div>
+                <div class="box correo">
+                    <a href="mailto:contacto@talenti.com">
+                        <img src="./assets/iconos/email-contact.png" alt="correo">
+                    </a>
+                </div>
+            </div>
 
 			<div class="contact100-more">
-				Contáctanos directamente al <span class="contact100-more-highlight"> +001 345 6889</span>
+				Contáctanos directamente al <span style="color: white;"> (55) 7599 0063</span>
 			</div>
 		</div>
-	</div>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        <span>Talenti - Todos los Derechos Reservados</span>
+
+        <div class="rss">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </footer>
 
     
 

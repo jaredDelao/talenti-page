@@ -75,21 +75,21 @@ $(".routers .estudios").click(function() {
 });
 $(".routers .clientes").click(function() {
   $('html, body').animate({
-      scrollTop: $("#clientes").offset().top
+      scrollTop: $("#clientes").offset().top - 100
   }, 500);
 });
 $(".routers .contacto").click(function() {
   $('html, body').animate({
-      scrollTop: $("#contacto").offset().top
+      scrollTop: $("#contacto").offset().top - 140
   }, 500);
 });
 
 // Sidebar
 var btnMenu = document.getElementsByClassName("openbtn");
-function fromSidebar(e) {
+function fromSidebar(e, quantity) {
   closeNav();
   $('html, body').animate({
-    scrollTop: $(e).offset().top - 50
+    scrollTop: $(e).offset().top - quantity
   }, 500);
 }
 
